@@ -1,5 +1,8 @@
-.content_input {
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
+
+input {
+    width: 20vw;
+    height: 2vw;
+    border-radius: 450px;
+    border: 1px solid black;
+  }
+

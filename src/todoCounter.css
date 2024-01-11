@@ -1,25 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Roboto+Condensed:wght@500&display=swap');
 
-body {
-    background-color: black;
-}
+/* todoCounter.css */
 
-h1 {
-    font-size: 40px;
-    text-align: center;
-    font-size: 30px;
+/* todoCounter.css */
+
+.content_titles {
+  position: relative;
+  left: 800px;
+  top: 200px;
+  margin: 0;
+  }
+  
+  .title {
+    font-size: 24px; 
+    
+  }
+
+  .Build {
     color: white;
+    font-size: 70px;
+    padding-right: 100px;
+  }
+
+  .List {
+    font-size: 40px;
+    color: white;
+  }
+  
+  h1 , h2 {
     margin: 0;
-}
+    font-size: 18px;
+  }
+  span {
+    font-weight: bold; 
+  }
 
-.title {
-    font-size: 35px;
-     color: white;
-     margin: 0;
-     padding-left: 50px;
-     padding-top: 20px;
-}
+  /* Estilos de los titles */
+  .To-Do {
+    font-size: 45px;
+    color: chocolate;
+  }
 
+  /*Todos Really*/
+
+  h1 {
+    position: relative; 
+    top: 35px;
+    font-size: 25px;
+    color: white;
+  }
+
+  .completed_total {
+    color: brown;
+    font-size: 30px;
+  }
 @media screen  and (max-width: 390px) {
     h1 {
         padding-top: 20px;

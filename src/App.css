@@ -1,0 +1,42 @@
+body {
+    background: rgb(93,52,203);
+background: linear-gradient(61deg, rgba(93,52,203,1) 10%, rgba(13,13,88,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.container_container {
+   position: relative;
+   left: 200px;
+   margin: 0;
+   bottom: 40px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    list-style: none;
+    padding: 70px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 250px;
+  }
+  
+  .container li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container li:last-child {
+    border-bottom: none;
+  }
+
+  .Todo_Title_Container {
+    padding-bottom: 20px;
+  }
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+ }
