@@ -7,35 +7,44 @@ import { CreateTodoButton } from './CreateTodoButton';
 
 import './App.css'; // Importando los estilos CSS
 
-const defaultTodos = [
+let defaultTodos = [
   {
     text: 'Cortar Cebolla', completed: true
   },
   {
+    text: 'Salir a Caminar', completed: true 
+  },
+  {
     text: 'Salir a Caminar', completed: false 
-  },
-  {
-    text: 'Salir con mis Padres', completed: false
-  },
-  {
-    text: 'Cenar', completed: false
-  },
-  {
-    text: 'Salir' , completed: false
   }
 
 ]
 
 function App() {
+  const [todos, setTodos] = React.useState(defaultTodos)
+  const [searchState , foudState] = React.useState();
+
+  const completedTodos = todos.filter(todo => todo.completed).length 
+  const totalTodos = todos.filter(todo => todo.text).length
+
+ 
+
+  //searchState = Busqueda
+  //foudState = Encontrado "Actualizador"
+console.log("Los usuarios buscan To do de " + searchState)
+
   return (
     <>
-      <TodoCounter completed={16} total={25} />
+      <TodoCounter completed={completedTodos} total={totalTodos} />
      
       <TodoList>
         <div className='container_container'>
         <div className='container'>
           <h2 className='Todo_Title_Container'>Task List</h2>
-          <TodoSearch /> {TodoSearch}
+          <TodoSearch 
+            searchState={searchState}
+            foudState={foudState}
+          /> 
         {defaultTodos.map(todo => (
           <TodoItem key={todo.text}// El Key(Llave) va ser los diferetes TodoItems text: 
            text={todo.text} //Esta enviando los TodoItems a Todoitem.js
