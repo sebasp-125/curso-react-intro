@@ -1,6 +1,8 @@
+import './CreateTodoBottom.css'; // Importando los estilos CSS
+
 function CreateTodoButton() {
     return (
-        <button>+</button>
+        <button>Añadir</button>
     )
 }
 

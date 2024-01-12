@@ -1,13 +1,22 @@
-//Selection
-function TodoItem(props) {
-    return (
-      <li>
-        <span>V {props.completed}</span>
-        <p>{props.text}</p>
-        <span>X</span>
-      </li>
-  
-    )
-  }
+// Importando estilos
+import './TodoItem.css';
 
-  export { TodoItem }
+function TodoItem(props) {
+  // Clase condicional para estilos de texto
+  const textClass = props.completed ? 'TodoItem-Completed' : 'TodoItem-Incomplete';
+
+  // Estilos condicionales para el fondo
+  const backgroundStyle = {
+    backgroundColor: props.completed ? 'green' : 'red',
+  };
+
+  return (
+    <li style={backgroundStyle}>
+      <span className={textClass}>V</span>
+      <p className={textClass}>{props.text}</p>
+      <span className='Delate_Todo'>X</span>
+    </li>
+  );
+}
+
+export { TodoItem };

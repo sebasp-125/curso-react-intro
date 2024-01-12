@@ -9,19 +9,19 @@ import './App.css'; // Importando los estilos CSS
 
 const defaultTodos = [
   {
-    text: 'Cortar Cebolla', completed: false
+    text: 'Cortar Cebolla', completed: true
   },
   {
-    text: 'Salir a Caminar', completed: true
+    text: 'Salir a Caminar', completed: false 
   },
   {
     text: 'Salir con mis Padres', completed: false
   },
   {
-    text: 'Cenar', completed: true
+    text: 'Cenar', completed: false
   },
   {
-    text: 'Salir' , completed: true
+    text: 'Salir' , completed: false
   }
 
 ]
@@ -41,6 +41,7 @@ function App() {
            text={todo.text} //Esta enviando los TodoItems a Todoitem.js
            completed = {todo.completed} />  //Ha futuro. Marcar completado o Faltante
         ))} 
+        
         </div>
         </div>
         

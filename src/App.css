@@ -36,7 +36,9 @@ background: linear-gradient(61deg, rgba(93,52,203,1) 10%, rgba(13,13,88,1) 100%,
     padding-bottom: 20px;
   }
   
-  body{
-    overflow-x: hidden;
+
+
+  body {
     overflow-y: hidden;
- }
+    overflow-x: hidden;
+}
